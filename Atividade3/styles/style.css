@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --fundo-claro: #ffffff;
+    --fundo-cinza: #f9fafb;
+    --texto-principal: #1f2937;
+    --texto-secundario: #4b5563;
+    --cor-destaque: #2563eb; 
+    --cabecalho-bg: #111827; 
+    --bordas: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--texto-principal);
+    line-height: 1.7;
+    background-color: var(--fundo-claro);
+}
+
+.header-1 {
+    background-color: var(--cabecalho-bg);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--cor-destaque);
+}
+
+.nav-bd-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+#introducao, #desvantagens, #conclusao {
+    background-color: var(--fundo-claro);
+}
+
+#vantagens, #exemplos, #referencias {
+    background-color: var(--fundo-cinza);
+    border-top: 1px solid var(--bordas);
+    border-bottom: 1px solid var(--bordas);
+}
+
+section {
+    padding: 70px 20px;
+}
+
+.bd-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 28px;
+    color: var(--cabecalho-bg);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--cor-destaque);
+    padding-left: 15px;
+}
+
+#introducao .bd-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title-color {
+    color: var(--cor-destaque);
+}
+
+.home-img {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--bordas);
+}
+
+h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: var(--cabecalho-bg);
+}
+
+p {
+    margin-bottom: 15px;
+    color: var(--texto-secundario);
+    text-align: justify;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: var(--texto-secundario);
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--texto-secundario);
+    border-left: 4px solid #9ca3af;
+    background-color: #f3f4f6;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+dl {
+    margin-top: 15px;
+}
+
+dt {
+    font-weight: 600;
+    color: var(--cabecalho-bg);
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    color: var(--texto-secundario);
+    margin-bottom: 15px;
+}
+
+.projects-text {
+    overflow-x: auto;
+}
+
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--fundo-claro);
+}
+
+.projects-table th {
+    background-color: var(--cabecalho-bg);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--cabecalho-bg);
+}
+
+.projects-table td {
+    padding: 12px;
+    border: 1px solid var(--bordas);
+    color: var(--texto-secundario);
+}
+
+.projects-table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+figure {
+    text-align: center;
+    background-color: var(--fundo-claro);
+    padding: 10px;
+    border: 1px solid var(--bordas);
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--texto-secundario);
+}
+
+footer {
+    background-color: var(--cabecalho-bg);
+    color: #9ca3af;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+#footer-title {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
