@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 420px) {
+    .caixa {
+        background-color: gray;
+    }
+
+    .caixa h2::before {
+        content: "Cinza";
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: orange;
+    }
+
+    .caixa h2::before {
+        content: "Laranja";
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: magenta;
+    }
+
+    .caixa h2::before {
+        content: "Rosa";
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: red;
+    }
+
+    .caixa h2::before {
+        content: "Vermelho";
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: purple;
+    }
+
+    .caixa h2::before {
+        content: "Roxo";
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: yellow;
+    }
+
+    .caixa h2::before {
+        content: "Amarelo";
+    }
+}
+
+@media (min-width: 1921px) {
+    .caixa {
+        background-color: green;
+    }
+
+    .caixa h2::before {
+        content: "Verde";
+    }
+}
