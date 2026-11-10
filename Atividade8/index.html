@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Cinema</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Pesquisa de Cinema</h1>
+
+    <h2>Informe seus dados:</h2>
+
+    <label for="idade">Idade:</label>
+    <input type="text" id="idade">
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo">
+        <option value="">Selecione</option>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+        <option value="outros">Outros</option>
+    </select>
+
+    <label for="opiniao">Opinião sobre o filme:</label>
+    <select id="opiniao">
+        <option value="">Selecione</option>
+        <option value="4">Ótimo</option>
+        <option value="3">Bom</option>
+        <option value="2">Regular</option>
+        <option value="1">Péssimo</option>
+    </select>
+
+    <button id="cadastrar">Cadastrar resposta</button>
+    <button id="resultados">Ver resultados</button>
+
+    <p id="mensagem"></p>
+
+    <h2>Resultados da pesquisa</h2>
+    <div id="resultado"></div>
+</body>
+</html>
